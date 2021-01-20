@@ -33,3 +33,4 @@ function isPrime(number) {
     }
     return number > 1;
   }
+

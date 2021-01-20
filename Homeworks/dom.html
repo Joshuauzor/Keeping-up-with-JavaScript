@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Color</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>My Favorite Color</h1>
+            <h2>Below are some samples of my favorite color</h2>
+            <div class="section" id="rectangleWrapper">
+                <div class="rectangle" id="Crimson"></div>
+                <p>#DC143C</p>
+                <div class="rectangle" id="LightSalmon"></div>
+                <p>#FFA07A</p>
+                <div class="rectangle" id="OrangeRed"></div>
+                <p>#FF4500</p>
+                <div class="rectangle" id="Orange"></div>
+                <p>#FFA500</p>
+                <div class="rectangle" id="DarkKhaki"></div>
+                <p>#BDB76B</p>
+                <div class="rectangle" id="Orchid"></div>
+                <p>#DA70D6</p>
+                <div class="rectangle" id="MediumSlateBlue"></div>
+                <p>#7B68EE</p>
+                <div class="rectangle" id="Lime"></div>
+                <p>#00FF00</p>
+                <div class="rectangle" id="SteelBlue"></div>
+                <p>#4682B4</p>
+                <div class="rectangle" id="SandyBrown"></div>
+                <p>#F4A460</p>
+            </div>
+        </div>
+    </div>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 0 10px;
+        }
+        .container h1,h2{
+            text-align: center;
+        }
+        #rectangleWrapper{
+            padding: 50px 50px 0 50px;
+        }
+        .rectangle{
+            height: 100px;
+        }
+        #Crimson{
+            background-color: #DC143C	;
+        }
+        #LightSalmon{
+            background-color: #FFA07A;	
+        }
+        #OrangeRed{
+            background-color: #FF4500	;	
+        }
+        #Orange{
+            background-color: #FFA500;	
+        }
+        #DarkKhaki{
+            background-color: #BDB76B;	
+        }
+        #Orchid{
+            background-color: #DA70D6;	
+        }
+        #MediumSlateBlue{
+            background-color: #7B68EE;	
+        }
+        #Lime{
+            background-color: #00FF00;	
+        }
+        #SteelBlue{
+            background-color: #4682B4;	
+        }
+        #SandyBrown{
+            background-color: #F4A460	;	
+        }
+    </style>
+
+    <script>
+        let displayID = () => {
+            console.log('Here are the rectangles ID\'s');
+            let rectangles = document.getElementsByClassName('rectangle');
+            // method..
+
+            // console.log(rectangles.length)
+            // for(var i=0; i < rectangles.length; i++){
+            //     const recIDs = rectangles[i].id;
+            //     console.log(recIDs);
+            // }
+            
+            // or method
+            for(rectangle of rectangles){
+                console.log(rectangle.id);
+            }
+        }
+
+        displayID();
+    </script>
+</body>
+</html>
