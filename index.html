@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeping Up with the JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-head">
+                        <h1>This is the first header</h1>
+                        <p class="lead">Yes... I said it</p>
+                        <button type="submit" class="btn">Click me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-head">
+                        <h1>This is the second header</h1>
+                        <p class="lead">I told you</p>
+                        <a id="google" href="https://google.com" target="_blank">To Google</a>
+                        <p class="areU"></p>
+                        <textarea name="" class="typing" id="typing" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        padding: 5px 20%;
+        justify-content: center;
+        align-content: center;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn{
+        width: 90px;
+        height: 30px;
+        margin-top: 1em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #f4f4f4;
+        background-color: rgb(95, 95, 219);
+        border-style: none;
+    }
+    .btn:hover{
+        background-color: red;
+    }
+</style>
+<script src="./Practice/events.js"></script>
+
+</html>
